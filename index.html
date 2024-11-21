@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Business Name Generator</h1>
+    <script>
+        let title = {
+    1 : "Crazy",
+    2 : "Amazing",
+    3 : "Fire",
+}
+
+let shopNames = {
+    1 : "Engine",
+    2 : "Foods",
+    3 : "Garments",
+}
+
+let endTitle = {
+    1 : "Bros",
+    2 : "Limited",
+    3 : "Hub",
+}
+
+function nameGenerator() {
+    let random = Math.floor(Math.random() * 3) + 1;
+    console.log(random);
+    console.log(`${title[random]} ${shopNames[random]} ${endTitle[random]}`);
+
+}
+nameGenerator();
+    </script>
+</body>
+</html>
